@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+*,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Layout */
+
+.layout{
+    max-width: 476px;
+    border: 1px solid; 
+    margin: 0 auto;
+    height: 100vh;
+    position: relative;
+}
+
+/* Topbar */
+.topbar{
+    text-align: center;
+    background-color: #579fff;
+    padding: 16px;
+    
+}
+
+.topbar h3{
+    font-family: Winky Sans, Helvetica, sans-serif;
+    color: white;
+    font-weight: 800;
+
+}
+/* Page Title */
+
+.page-title{
+    padding: 16px;
+}
+
+.page-title h3{
+    text-align: center;
+    font-weight: 900;
+    font-size: x-large;
+    font-family: Winky Sans;
+}
+
+/* items */
+.items{
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 170px);
+    overflow-y: scroll;
+    padding: 16px;
+    gap: 16px;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    padding-bottom: 16px;
+    background-color: white;
+    box-shadow: 0px 0px 4px 1px #999;
+}
+
+.item-img{
+    width: 50%;
+}
+
+.item-submit,
+.led-submit{
+    background-color: #579fff;
+    padding: 4px 8px;
+    width: 100%;
+    color: white;
+    font-weight: bolder;
+    font-size: 18px;
+    border: none;
+    font-family: Winky Sans;
+}
+
+.item-submit:hover{
+    transition: all .3s  ease-in-out;
+    scale: 101%;
+    background-color: #3b8ffe;
+    cursor: pointer;
+}
+
+.led-submit:hover{
+    transition: all .3s  ease-in-out;
+    scale: 101%;
+    background-color: #3b8ffe;
+    cursor: pointer;
+}
+
+/* LED */
+.leds{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 16px;
+    gap: 16px;
+}
+
+.led-location{
+    font-family: winky sans;
+}
+
+.led{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 8px;
+    padding-bottom: 16px;
+    background-color: white;
+    box-shadow: 0px 0px 4px 1px #999; 
+}
+
+.led-img{
+    width: 100px;
+    object-fit: cover;
+}
+
+
+/* Bottombar */
+.bottombar{
+    position: absolute;
+    bottom: 0;
+    background-color: #579fff;
+    width: 100%;
+    left: 0;
+    padding: 10px;
+}
+
+.bottombar ul{
+    display: flex;
+    width: 100%;
+    list-style-type: none;
+}
+
+.bottombar ul li{
+    flex:1;
+    text-align: center;
+}
+
+.bottombar ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: Winky Sans;
+    font-size: x-large;
+    display: block;
+}
+
+.bottombar ul li a:hover{
+    transition: all .3s ease-in-out;
+    scale: 110%;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartLamp</title>
+    <link rel="stylesheet" href="Style/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <div class="layout">
+        <section class="topbar">
+            <h3>
+                Dapi Gamink
+            </h3>
+        </section>
+        <section class="page-title">
+            <h3>
+                LED CONTROL
+            </h3>
+        </section>
+        <section class="leds">
+            <div class="led">
+                <img src="Assets/led-off.png" class="led-img" id="ledDapurimg">
+                <p class="led-location">Dapur</p>
+                <button class="led-submit" id="ledDapur" onclick="SetDapurLed()">
+                    TURN <span id="ledDapurSpan">ON</span></button>
+            </div>
+            <div class="led">
+                <img src="Assets/led-off.png" class="led-img" id="ledTamuimg">
+                <p class="led-location">Ruang tamu</p>
+                <button class="led-submit" id="ledTamuSpan" onclick="SetTamuLed()">
+                    TURN <span id="ledTamuSpan">ON</span></button>
+            </div>
+            <div class="led">
+                <img src="Assets/led-off.png" class="led-img" id="ledMakanimg">
+                <p class="led-location">Ruang Makan</p>
+                <button class="led-submit" id="ledMakan" onclick="SetMakanLed()">
+                    TURN <span id="ledMakanSpan">ON</span></button>
+            </div>
+            <div class="led">
+                <img src="Assets/led-off.png" class="led-img" id="ledKamarimg">
+                <p class="led-location">Kamar</p>
+                <button class="led-submit" id="ledKamar" onclick="SetKamarLed()">
+                    TURN <span id="ledKamarSpan">ON</span></button>
+            </div>
+            
+        </section>
+
+        <section class="bottombar">
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-home"></i></a></li>
+                <li><a href="led.html"><i class="fa-solid fa-lightbulb"></i></a></li>
+                <li><a href="wip.html"><i class="fa-solid fa-fan"></i></a></li>
+                <li><a href="wip.html"><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+
+        </section>
+
+
+    </div>
+    
+    <script src="JS/main.js"></script>
+</body>
+</html>
